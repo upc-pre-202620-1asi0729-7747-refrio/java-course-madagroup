@@ -1,0 +1,6 @@
+Hola, Ana
+Edad: 14
+Promedio: 17.5
+Participa: true
+Puntos con bono: 13
+¿Tiene 13 o más?: true
