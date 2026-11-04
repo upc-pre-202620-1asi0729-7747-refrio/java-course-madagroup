@@ -1,0 +1,7 @@
+Puedes participar.
+Ronda 1
+Ronda 2
+Ronda 3
+Vidas: 2
+Vidas: 1
+Fin del juego.
