@@ -1,0 +1,48 @@
+VIDEO 1 — Tu primer programa en Java
+Responsable: integrante 1
+Duración: 12 minutos (5 teoría + 7 práctica)
+
+PARTE A — EXPLICACIÓN CON DIAPOSITIVAS
+
+00:00–00:35 | Diapositiva 1: ¡Tu primer programa en Java!
+Hola. En este curso vamos a descubrir cómo funcionan los programas y cómo crear los nuestros usando Java. No necesitas haber programado antes. Basta con tener curiosidad, un navegador y ganas de probar. Primero veremos cómo darle instrucciones a una computadora; luego escribiremos un programa muy corto, aprenderemos a guardar información y haremos cálculos. Al terminar la lección, vas a poder cambiar el contenido del programa y comprobar inmediatamente qué sucede. Recuerda: equivocarse al escribir código es parte normal de aprender.
+
+00:35–01:15 | Diapositiva 2: Programar es dar instrucciones
+Cuando cocinamos, seguimos una receta: primero reunimos los ingredientes, después realizamos una serie de pasos y finalmente obtenemos un plato. Un programa funciona de forma parecida. Recibe datos, sigue instrucciones y produce un resultado. Por ejemplo, si ingresamos dos números y pedimos que los sume, el resultado es otro número. Una computadora no adivina qué queremos hacer: debemos decirle exactamente qué operaciones realizar. Por eso aprender programación consiste en practicar instrucciones precisas, una tras otra.
+
+01:15–01:55 | Diapositiva 3: ¿Qué es Java?
+Java es un lenguaje de programación. Nos permite escribir instrucciones usando palabras y símbolos que tienen reglas. Java se utiliza, por ejemplo, en diferentes tipos de aplicaciones y sistemas. En nuestras primeras lecciones haremos programas de consola: mostraremos texto y números, y después pediremos información al usuario. Puede parecer algo pequeño, pero las mismas ideas se usan en programas más grandes. No vamos a instalar nada; trabajaremos en un editor de Java que funciona desde el navegador y ejecuta el código por nosotros.
+
+01:55–02:50 | Diapositiva 4: Tu primer «Hola, mundo»
+Este es un programa completo muy pequeño. La palabra class define una clase llamada Main, que contiene el punto de inicio del programa. En el método main se colocan las instrucciones que Java ejecutará primero. La instrucción System.out.println escribe el texto indicado en la consola. Observa los signos: las comillas rodean el texto, los paréntesis pertenecen a la instrucción y el punto y coma marca su final. En la práctica copiaremos este ejemplo, lo ejecutaremos y reemplazaremos el mensaje por otro. No tienes que memorizarlo en este momento.
+
+02:50–03:45 | Diapositiva 5: Variables: datos con nombre
+Una variable guarda un valor y tiene un nombre. Si queremos conservar el nombre de un estudiante, podemos utilizar una variable llamada nombre. Java también necesita saber qué tipo de dato almacenaremos. String representa texto; int, números enteros; double, números con decimales; y boolean, verdadero o falso. El signo igual de estas instrucciones asigna un valor. Podemos consultar la variable más adelante y cambiarla cuando sea necesario. La idea importante es que cada dato tenga un nombre claro, como edad o puntos, para entender el programa.
+
+03:45–04:25 | Diapositiva 6: Operadores: hacer cálculos
+Además de guardar información, un programa puede calcularla. Los símbolos más conocidos son el más para sumar, el menos para restar, el asterisco para multiplicar y la barra para dividir. Aquí empezamos con ocho puntos, sumamos dos y obtenemos diez. También usamos un operador de comparación: mayor o igual que. La expresión edad mayor o igual a trece produce un resultado booleano, es decir, true o false. En la siguiente lección usaremos ese resultado para hacer que el programa tome decisiones.
+
+04:25–05:00 | Diapositiva 7: Pasa del ejemplo a la consola
+Vamos a cambiar ahora de las diapositivas a un editor de Java en línea. Primero ejecutaremos un Hola mundo para comprobar que todo funciona. Después guardaremos nombre, edad y puntos en variables. Finalmente modificaremos sus valores para ver si el resultado cambia. Si estás viendo el video, puedes pausarlo y escribir cada línea a tu ritmo. La meta de hoy no es repetir código de memoria, sino entender que una instrucción produce un resultado y que tú puedes controlar ese resultado.
+
+PARTE B — PRÁCTICA EN EL EDITOR EN LÍNEA
+
+05:00–06:15 | Abrir el editor y ejecutar Hola mundo
+ACCIÓN: Muestra JDoodle u OnlineGDB con Java seleccionado. Copia y ejecuta el starter de la lección 1.
+GUION: Estamos en un editor de Java que funciona dentro del navegador. No hace falta instalar nada. Aquí está el área donde escribimos instrucciones y debajo veremos la consola. Vamos a presionar ejecutar. Si aparece “¡Hola, mundo!”, ya hemos comprobado que el programa se ejecuta correctamente. Fíjate cómo la instrucción println produce una línea de texto.
+
+06:15–07:40 | Crear nombre y edad
+ACCIÓN: Dentro de main, agrega `String nombre = "Ana";` e `int edad = 14;` y dos println.
+GUION: Ahora vamos a crear dos datos. Escribimos String nombre porque queremos guardar texto. Escribimos int edad porque guardaremos un número entero. Al imprimir una variable no escribimos su nombre entre comillas; si lo hacemos, veremos la palabra literal y no su contenido. Ejecutamos nuevamente y comprobamos que aparecen Ana y catorce.
+
+07:40–09:05 | Agregar números y una condición
+ACCIÓN: Escribe `double promedio = 17.5;`, `boolean participa = true;`, `int puntos = 8 + 2;` y muestra sus valores.
+GUION: También podemos guardar valores decimales y respuestas de verdadero o falso. Con puntos calculamos ocho más dos, y el resultado queda guardado. Observa que Java evalúa la expresión antes de mostrarla. Agreguemos ahora puntos más tres. El resultado esperado es trece. Probemos que el cálculo sea el que habíamos previsto.
+
+09:05–10:35 | Comparar una edad
+ACCIÓN: Imprime la expresión `(edad >= 13)` y cambia edad a 12.
+GUION: Aquí escribimos una comparación. Cuando la edad es catorce, Java responde true. ¿Qué pasará si la cambiamos a doce? Antes de ejecutar, intenta anticipar el resultado. Ahora ejecutamos y comprobamos que aparece false. En programación, predecir el resultado y contrastarlo con lo que vemos es una buena manera de aprender.
+
+10:35–12:00 | Reto y resumen
+ACCIÓN: Recupera edad 14, modifica nombre y cambia los puntos; muestra el archivo terminado.
+GUION: Para practicar, cambia el nombre por el tuyo y modifica el número de puntos. Pausa el video si necesitas escribir con calma. Comprueba que tus cambios se reflejan en la consola. En esta lección hemos creado instrucciones, usado cuatro tipos de datos, calculado resultados y leído comparaciones. En la siguiente clase usaremos true y false para decidir qué instrucciones ejecutar.
