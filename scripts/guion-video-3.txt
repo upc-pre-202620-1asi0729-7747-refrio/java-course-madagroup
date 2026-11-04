@@ -1,0 +1,45 @@
+VIDEO 3 — Métodos, entradas y colecciones
+Responsable: integrante 3
+Duración: 12 minutos (5 teoría + 7 práctica)
+
+PARTE A — EXPLICACIÓN CON DIAPOSITIVAS
+
+00:00–00:45 | Diapositiva 14: Métodos y colecciones
+Ya sabes escribir instrucciones, tomar decisiones y repetir acciones. En esta lección daremos dos pasos más. El primero será crear métodos, que son grupos de instrucciones a los que podemos dar un nombre y volver a utilizar. El segundo será trabajar con información que llega del usuario y con conjuntos de datos. También veremos algunas operaciones con textos. Al terminar podrás pedir el nombre de una persona, guardar varias notas, calcular un resultado y mostrarlo, todo dentro de un programa de consola.
+
+00:45–01:35 | Diapositiva 15: Métodos: tareas reutilizables
+Un método es un conjunto de instrucciones que realiza una tarea. Puedes imaginarlo como una pequeña máquina: la llamamos por su nombre, recibe algunos datos si los necesita y realiza un trabajo. Por ejemplo, un método sumar puede recibir dos números y calcular su suma. Después podemos usarlo desde distintas partes del programa sin escribir otra vez toda la operación. En Java ya conoces un método: main. Ahora aprenderemos a crear uno propio. La ventaja principal es que el código queda más ordenado y fácil de entender.
+
+01:35–02:25 | Diapositiva 16: Parámetros y return
+Observa el método sumar. Los nombres a y b son parámetros: representan los valores que entregaremos cuando lo llamemos. La palabra int antes del nombre indica que el método devuelve un número entero. Return indica qué resultado entrega. Si llamamos sumar con cuatro y tres, obtendremos siete y lo podremos guardar o imprimir. La palabra static aquí permite llamar este método directamente desde main en nuestro ejemplo. No te preocupes por dominar static hoy; lo importante es reconocer el nombre del método, los parámetros y su resultado.
+
+02:25–03:15 | Diapositiva 17: Scanner: recibir lo que escribe el usuario
+Hasta ahora hemos escrito la información directamente en el código. Con Scanner podemos leer lo que una persona escribe en la consola. Primero importamos esta herramienta desde Java. Después creamos una variable entrada y usamos nextLine para leer una línea de texto. Finalmente mostramos un saludo personalizado. Según el editor en línea que uses, la respuesta se escribirá en la consola interactiva o en un espacio llamado entrada estándar. Es lo mismo para nuestro propósito: el programa recibe el nombre y responde utilizando ese valor.
+
+03:15–04:15 | Diapositiva 18: Arrays y String: varios datos
+Si un estudiante tiene tres notas, podríamos crear tres variables; pero también podemos guardarlas en un array, como una lista ordenada. En Java los índices empiezan en cero: notas cero es la primera nota y notas dos es la tercera. La propiedad length nos indica cuántos elementos tiene el array. Con String trabajamos con texto. Por ejemplo, nombre punto length con paréntesis cuenta los caracteres, mientras que equals compara si dos textos tienen el mismo contenido. Para comparar texto en Java, no conviene usar doble igual: se usa equals.
+
+04:15–05:00 | Diapositiva 19: Reto: calcula el promedio
+En nuestra demostración escribiremos un método llamado sumar y usaremos un array con tres notas. La primera y la segunda nota pasarán por ese método, después agregaremos la tercera y dividiremos entre la cantidad de datos. También pediremos el nombre de la persona usando Scanner y comprobaremos cuántas letras tiene. Si ves un decimal largo, recuerda que puede ser un resultado normal al dividir. Lo más importante será identificar qué parte del código recibe datos, cuál calcula y cuál muestra la respuesta.
+
+PARTE B — PRÁCTICA EN EL EDITOR EN LÍNEA
+
+05:00–06:15 | Mostrar el método sumar
+ACCIÓN: Abre el starter de la lección 3. Señala el método `sumar(int a, int b)` y realiza una llamada sencilla desde main.
+GUION: Nuestro archivo tiene un método sumar. Recibe dos números, los suma y devuelve el resultado. Para comprobarlo, llamémoslo con cuatro y tres desde main y mostremos lo que entrega. Debe aparecer siete. El beneficio es que podemos volver a llamarlo con otros valores sin reescribir la operación.
+
+06:15–07:40 | Leer un nombre con Scanner
+ACCIÓN: Ejecuta el starter y escribe `Ana` como entrada estándar; explica nextLine.
+GUION: Ahora el programa pregunta cómo te llamas. La instrucción nextLine espera una línea de texto. En algunos editores debes escribir Ana en el campo de entrada antes de ejecutar; en otros puedes responder en la consola. Al ejecutarlo, el saludo contiene el nombre que ingresamos, no uno fijado previamente en el código.
+
+07:40–09:05 | Crear array de tres notas
+ACCIÓN: Agrega `int[] notas = {15, 18, 17};` y muestra `notas[0]` y `notas.length`.
+GUION: Vamos a guardar tres notas en una sola estructura. La primera es quince, la segunda dieciocho y la tercera diecisiete. Recuerda que el primer índice es cero. Si mostramos notas cero, veremos quince. Length nos indica que hay tres datos. Esto evita escribir muchas variables independientes.
+
+09:05–10:35 | Calcular el promedio
+ACCIÓN: Suma notas con el método y divide por `(double) notas.length`; imprime promedio.
+GUION: Sumaremos la primera y la segunda nota usando nuestro método, luego agregaremos la tercera. Para hallar el promedio dividimos el total entre tres. Indicamos double en la división para conservar los decimales. Java puede mostrar bastantes cifras decimales, lo cual es normal. Ejecutemos y comprobemos el cálculo con los datos que escribimos.
+
+10:35–12:00 | Explorar texto y cerrar
+ACCIÓN: Imprime `nombre.length()` y `nombre.equals("Ana")`; cambia la entrada a Luis.
+GUION: Para terminar, observemos el texto que introdujo el usuario. Length cuenta los caracteres y equals nos permite comprobar si es igual a Ana. Si escribimos Luis, la comparación será falsa. Pausa el video y prueba tu propio nombre. Ya sabes organizar cálculos con métodos, recibir información y trabajar con arrays. En el próximo video estos datos estarán dentro de objetos.

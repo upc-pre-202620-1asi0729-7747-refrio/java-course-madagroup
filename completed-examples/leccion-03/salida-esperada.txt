@@ -1,0 +1,5 @@
+¿Cómo te llamas? Hola, Ana
+Tienes 3 notas.
+Promedio: 16.666666666666668
+Tu nombre tiene 3 letras.
+¿Te llamas Ana?: true
