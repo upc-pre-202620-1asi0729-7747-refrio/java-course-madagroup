@@ -1,0 +1,45 @@
+VIDEO 2 — Decisiones y repeticiones
+Responsable: integrante 2
+Duración: 12 minutos (5 teoría + 7 práctica)
+
+PARTE A — EXPLICACIÓN CON DIAPOSITIVAS
+
+00:00–00:45 | Diapositiva 8: Decidir y repetir
+En la primera clase creamos variables y realizamos operaciones. Ahora vamos a conseguir que el programa se comporte de manera diferente según un dato. Imagina un juego donde algunas personas pueden participar dependiendo de su edad, o donde hay tres rondas. No sería práctico escribir la misma instrucción una y otra vez. Para resolverlo usaremos decisiones y bucles. Vamos a conocer if, else, for y while. Al terminar podrás construir un programa sencillo que compruebe una condición y repita mensajes sin copiarlos muchas veces.
+
+00:45–01:35 | Diapositiva 9: if / else: elegir entre dos caminos
+La palabra if significa si. Entre paréntesis colocamos una condición, por ejemplo que la edad sea al menos trece años. Si esa expresión resulta verdadera, el programa muestra que puede participar. Si resulta falsa, se ejecuta el bloque else. Las llaves sirven para agrupar las instrucciones de cada caso. Un detalle muy importante: aquí utilizamos doble igual solamente cuando queremos comparar si dos valores numéricos son iguales. Un único igual se usa para asignar un valor a una variable.
+
+01:35–02:25 | Diapositiva 10: Comparar y combinar condiciones
+Para decidir, Java puede comparar números. Mayor que se escribe con el símbolo de apertura a la izquierda y menor que con el otro símbolo. Dos signos de igual sirven para comprobar igualdad, mientras que exclamación seguida de igual significa distinto. A veces hacen falta dos condiciones: con doble ampersand, ambas deben cumplirse; con dos barras verticales, basta con que se cumpla una. Por ejemplo, podemos permitir el ingreso si una persona tiene la edad mínima y cuenta con autorización. Primero comprendamos comparaciones sencillas; luego combinaremos condiciones.
+
+02:25–03:15 | Diapositiva 11: for: un número conocido de repeticiones
+Imagina que un juego tiene tres rondas. En lugar de escribir tres mensajes por separado, usamos un bucle for. La variable ronda empieza en uno. Antes de cada vuelta comprobamos si es menor o igual a tres. Al terminar cada vuelta, ronda aumenta en uno. Mientras la condición sea verdadera, el mensaje vuelve a mostrarse. La computadora ejecuta las mismas instrucciones con valores distintos. Es importante que el contador cambie; de lo contrario, el bucle podría no finalizar como esperábamos.
+
+03:15–04:15 | Diapositiva 12: while: repetir mientras sea verdadero
+While significa mientras. Aquí definimos una variable vidas que comienza en dos. El bloque se ejecuta mientras haya vidas disponibles. En cada vuelta mostramos cuántas quedan y restamos una con dos signos menos. Cuando vidas llega a cero, la condición deja de cumplirse y el ciclo termina. A diferencia de for, while suele ser cómodo cuando pensamos primero en una condición, no necesariamente en un número fijo de vueltas. Igual que antes, hay que asegurarse de que algo cambie dentro del bucle.
+
+04:15–05:00 | Diapositiva 13: Reto: un juego de tres rondas
+Durante la práctica construiremos un programa pequeño. Primero pediremos a Java que revise una edad. Después mostraremos tres rondas y, finalmente, descontaremos dos vidas. Ejecutaremos el programa varias veces cambiando valores, porque ver cómo cambia la salida nos ayuda a comprender cada instrucción. Tu reto personal consiste en probar una edad de doce años y comparar el resultado con una edad de catorce. También puedes cambiar las rondas de tres a cinco y predecir cuántas líneas aparecerán en la consola.
+
+PARTE B — PRÁCTICA EN EL EDITOR EN LÍNEA
+
+05:00–06:15 | Probar la decisión con una edad
+ACCIÓN: Carga el starter de la lección 2 y sustituye el TODO por `if (edad >= 13) { ... } else { ... }`.
+GUION: Recordemos que el programa guarda edad igual a catorce. Vamos a preguntar si esa edad es al menos trece. Dentro del primer bloque escribimos que puede participar; en el segundo, que todavía no puede. Ejecutamos y observamos qué mensaje aparece. Un bloque se elige según el resultado de la condición.
+
+06:15–07:40 | Forzar la otra alternativa
+ACCIÓN: Cambia edad a 12; prueba también edad 13 y explica el límite.
+GUION: Probemos con doce. El programa debería mostrar la alternativa de else. Ahora probemos con trece; como la condición utiliza mayor o igual, trece sí cumple. Esta comparación es útil para descubrir errores en los límites. Antes de ejecutar cada cambio, piensa cuál será el resultado.
+
+07:40–09:05 | Añadir tres rondas con for
+ACCIÓN: Escribe el bucle for completo; ejecuta y cuenta los mensajes.
+GUION: Ahora crearemos tres rondas sin repetir tres veces println. La variable ronda comienza en uno, se comprueba si sigue siendo menor o igual a tres y se incrementa al finalizar cada vuelta. Ejecutamos. Aparecen ronda uno, ronda dos y ronda tres. El número de mensajes coincide con el número de repeticiones.
+
+09:05–10:35 | Descontar vidas con while
+ACCIÓN: Agrega `int vidas = 2; while (vidas > 0) { ... vidas--; }`.
+GUION: Pensemos en un videojuego con dos vidas. Mientras queden vidas, el programa muestra su cantidad y descuenta una. Fíjate en vidas menos menos: así reducimos el contador. Si olvidáramos ese cambio, el bucle podría ejecutarse indefinidamente. Ejecutamos y comprobamos que aparecen dos vueltas, luego el programa termina.
+
+10:35–12:00 | Resolver el reto
+ACCIÓN: Cambia el límite de las rondas a 5 y después restáuralo; explica la diferencia entre for y while.
+GUION: Tu reto consiste en mostrar cinco rondas. Modifica el límite, ejecuta y cuenta los resultados. Muy bien. En resumen: if decide entre alternativas, for repite una cantidad conocida de veces y while se mantiene mientras se cumple una condición. Estos tres recursos están presentes en muchísimos programas. En la próxima clase aprenderemos a ordenar estas instrucciones en métodos.
