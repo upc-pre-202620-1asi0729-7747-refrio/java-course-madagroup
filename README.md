@@ -37,13 +37,13 @@ java-course-madagroup/
 
 ## 📚 Lecciones
 
-| # | Tema | Duración | Video | Práctica |
-|---|------|----------|-------|----------|
-| 1 | ¡Tu primer programa en Java! | 12 min | Pendiente de enlace real | enlace en línea pendiente |
-| 2 | Decidir y repetir | 12 min | Pendiente de enlace real | enlace en línea pendiente |
-| 3 | Métodos y colecciones | 12 min | Pendiente de enlace real | enlace en línea pendiente |
-| 4 | Clases y objetos | 12 min | Pendiente de enlace real | enlace en línea pendiente |
-| 5 | Proyecto final: registro de estudiantes | 12 min | Pendiente de enlace real | enlace en línea pendiente |
+| # | Tema | Duración | Video |
+|---|------|----------|-------|
+| 1 | ¡Tu primer programa en Java! | 11:55 min | [Primera Lección](https://www.youtube.com/watch?v=lfNNw1m_uok) |
+| 2 | Decidir y repetir | 5:58 min | [Segunda Lección](https://www.youtube.com/watch?v=EXj2zjrXrJc) |
+| 3 | Métodos y colecciones | 13:08 min | [Tercera Lección](https://www.youtube.com/watch?v=fw5Tm1RR3Pw) |
+| 4 | Clases y objetos | 10:37 min | [Cuarta Lección](https://www.youtube.com/watch?v=ziSo4EXq6rE) |
+| 5 | Proyecto final: registro de estudiantes | 6:39 min | [Quinta Lección](https://www.youtube.com/watch?v=KDFJ0r4vF5w) |
 
 ---
 

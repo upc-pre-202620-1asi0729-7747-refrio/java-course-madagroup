@@ -1,0 +1,6 @@
+REGISTRO DE ESTUDIANTES
+1. Ana - 14 años
+2. Luis - 15 años
+Después de actualizar:
+Ana: 15
+Luis: 15

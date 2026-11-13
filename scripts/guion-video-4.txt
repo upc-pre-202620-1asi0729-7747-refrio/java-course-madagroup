@@ -1,0 +1,45 @@
+VIDEO 4 — Clases y objetos
+Responsable: integrante 4
+Duración: 12 minutos (5 teoría + 7 práctica)
+
+PARTE A — EXPLICACIÓN CON DIAPOSITIVAS
+
+00:00–00:45 | Diapositiva 20: Clases y objetos
+En esta lección conoceremos una forma muy utilizada de organizar programas: la programación orientada a objetos, conocida como POO. La idea es representar elementos de un problema mediante objetos. Para practicar elegiremos estudiantes: cada estudiante puede tener un nombre y una edad, y también puede realizar una acción como presentarse. Primero entenderemos la diferencia entre una clase y un objeto, después crearemos un constructor y terminaremos generando dos estudiantes independientes. Es una introducción, así que usaremos ejemplos pequeños y fáciles de seguir.
+
+00:45–01:35 | Diapositiva 21: Clase y objeto no son lo mismo
+Piensa en un molde para galletas. El molde establece una forma, pero puedes fabricar muchas galletas diferentes usando el mismo molde. En programación, la clase cumple el papel del molde. Define qué información y comportamientos tendrán los objetos. Un objeto es una instancia concreta: por ejemplo, Ana tiene catorce años y Luis tiene quince. Ambos son estudiantes y comparten la estructura, pero guardan valores diferentes. Crear instancias a partir de una clase permite representar muchas entidades sin repetir toda su definición.
+
+01:35–02:25 | Diapositiva 22: Atributos y métodos de una clase
+En esta clase Estudiante declaramos dos atributos: nombre y edad. Son datos que pertenecerán a cada estudiante creado. Además hay un método llamado presentarse, que muestra su nombre en consola. Observa que el método está definido dentro de las llaves de la clase. La clase describe una estructura, pero todavía no aparece un estudiante específico. Para eso necesitaremos crear un objeto. En el ejemplo mantendremos el código simple y en la próxima clase mejoraremos la protección de estos atributos mediante encapsulación.
+
+02:25–03:15 | Diapositiva 23: Constructor: valores desde el comienzo
+Para construir un estudiante necesitamos establecer sus datos iniciales. Un constructor sirve justamente para eso. Tiene el mismo nombre de la clase y recibe parámetros como nombre y edad. En el cuerpo aparece this, que señala el atributo del objeto actual. Es decir, this.nombre se refiere al dato guardado por ese estudiante, mientras que el otro nombre es el parámetro recibido. Al ejecutar el constructor, cada nuevo estudiante guarda sus propios valores. Esta herramienta evita crear objetos incompletos y facilita usar la clase correctamente.
+
+03:15–04:15 | Diapositiva 24: new: crear dos estudiantes
+Ahora usamos new para crear objetos concretos. La primera instrucción fabrica un estudiante llamado Ana, de catorce años. La segunda crea a Luis, de quince. Las variables ana y luis guardan referencias a esos objetos. Si llamamos presentarse en cada uno, veremos mensajes diferentes porque cada estudiante conserva su propio nombre y su edad. También podemos agregar un método cumplirAnios que aumente la edad de un estudiante. Si se lo aplicamos solamente a Ana, Luis conserva la edad que tenía.
+
+04:15–05:00 | Diapositiva 25: Reto: estudiantes que se presentan
+En la parte práctica trabajaremos dentro de un único archivo Main.java. Definiremos la clase Estudiante y luego una clase Main para ejecutar el programa. Crearemos dos objetos, pediremos que se presenten y añadiremos una acción llamada cumplirAnios. Veremos que modificar un objeto no cambia automáticamente el otro. Esa independencia es una de las ideas centrales de los objetos. En la siguiente y última lección aprenderemos a proteger la información de cada estudiante y construiremos un registro muy sencillo.
+
+PARTE B — PRÁCTICA EN EL EDITOR EN LÍNEA
+
+05:00–06:15 | Reconocer la clase
+ACCIÓN: Abre starter de la lección 4; identifica la clase Estudiante y sus dos atributos.
+GUION: Aquí tenemos dos clases dentro del mismo archivo: Estudiante y Main. Estudiante define nombre y edad. No hemos creado todavía ningún estudiante concreto; solo hemos descrito cómo será cada uno. Esa diferencia entre clase y objeto es la idea principal de esta lección.
+
+06:15–07:40 | Explicar el constructor
+ACCIÓN: Señala `Estudiante(String nombre, int edad)` y los dos `this`.
+GUION: El constructor recibe el nombre y la edad al crear cada objeto. Cuando escribimos this.nombre, señalamos el atributo del estudiante actual. El otro nombre, que llega por parámetro, es el dato que nos han entregado. Lo mismo ocurre con edad. Así se preparan los datos desde el primer momento.
+
+07:40–09:05 | Crear Ana y Luis
+ACCIÓN: Dentro de main, crea dos objetos usando `new Estudiante(...)`.
+GUION: Creemos ahora a Ana de catorce años y a Luis de quince. Usamos la palabra new para construirlos. Si solo tenemos la clase, aún no existe un estudiante concreto; con new creamos una instancia. Observa que las variables ana y luis representan estudiantes diferentes.
+
+09:05–10:35 | Mostrar y cambiar edad
+ACCIÓN: Llama a presentarse en ambos y agrega `cumplirAnios()` al modelo.
+GUION: Ahora pediremos a cada estudiante que se presente. Ejecutamos y vemos dos nombres y dos edades. Agreguemos un método cumplirAnios, que aumenta en uno la edad del objeto. Se lo aplicamos solamente a Ana y repetimos su presentación. Ana cambia a quince; Luis sigue igual. Esto demuestra que cada objeto mantiene sus propios datos.
+
+10:35–12:00 | Reto del tercer estudiante
+ACCIÓN: Crea un tercer objeto o cambia el nombre de Luis; ejecuta para verificar.
+GUION: Como reto final, añade un estudiante llamado Marta con dieciséis años y pídele que se presente. Pausa el video si lo necesitas. Comprueba el resultado. Hoy hemos usado una clase, atributos, un constructor, métodos y la palabra new para crear objetos. En la lección siguiente controlaremos cómo pueden modificarse sus atributos.

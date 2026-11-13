@@ -1,0 +1,45 @@
+VIDEO 5 — Encapsulación y proyecto final
+Responsable: integrante 5
+Duración: 12 minutos (5 teoría + 7 práctica)
+
+PARTE A — EXPLICACIÓN CON DIAPOSITIVAS
+
+00:00–00:45 | Diapositiva 26: Proyecto final: registro de estudiantes
+Hemos llegado a la última lección. Ya conocemos variables, decisiones, bucles, métodos, arrays y objetos. Ahora vamos a unir esas ideas en un programa de registro de estudiantes. Además aprenderemos encapsulación: una forma de cuidar los datos de una clase y decidir cómo pueden consultarse o modificarse. Al terminar, el programa mostrará una lista de estudiantes, actualizará una edad válida e ignorará una edad incorrecta. Esta práctica nos ayudará a entender que programar no es copiar instrucciones sueltas, sino combinar ideas para resolver un problema.
+
+00:45–01:35 | Diapositiva 27: Encapsular: cuidar los datos
+Imagina una puerta con una recepción. No dejamos que cualquier persona entre y cambie registros sin control; primero pasa por un procedimiento. En una clase ocurre algo parecido. Con private indicamos que un atributo no debe modificarse directamente desde otras clases. En su lugar, podemos exponer métodos públicos que permitan leerlo o actualizarlo de forma controlada. Por ejemplo, una edad negativa no tiene sentido para nuestro registro. Con un método de actualización podemos comprobar el valor antes de guardarlo. Esa idea básica se llama encapsulación.
+
+01:35–02:25 | Diapositiva 28: Getters y setters
+Un getter es un método de consulta. El método getEdad devuelve el valor actual de edad. Un setter es un método de actualización. En setEdad recibimos una nueva edad y verificamos que sea igual o mayor que cero y menor o igual que ciento veinte. Si cumple la condición, la guardamos; de lo contrario, el valor se conserva. Este ejemplo también combina un método, un if y los operadores de comparación. No es necesario que todos los atributos tengan setter: depende de lo que el programa necesite permitir.
+
+02:25–03:15 | Diapositiva 29: Arrays de objetos
+Antes guardamos varias notas en un array. Ahora haremos algo parecido con objetos. Declaramos un array de Estudiante y creamos dos integrantes del grupo. Después usamos un for para recorrer cada posición desde cero hasta antes de grupo.length. En cada vuelta consultamos los datos del estudiante correspondiente. Fíjate en la combinación de conceptos: el array organiza los objetos, el bucle los recorre y los métodos permiten leer su información. Así construimos una parte importante de nuestro pequeño registro.
+
+03:15–04:15 | Diapositiva 30: El programa completo
+Este es el recorrido de nuestro proyecto final. Primero crearemos estudiantes con nombres y edades. Luego mostraremos la lista de nombres y edades mediante un bucle. Después actualizaremos la edad de Ana y verificaremos que el valor cambió. Finalmente intentaremos colocar una edad negativa para observar que el método de actualización la rechaza. No es un sistema para guardar datos permanentemente, porque al finalizar el programa se pierde la información de memoria. Es un ejercicio de consola que integra los conocimientos más importantes de este curso.
+
+04:15–05:00 | Diapositiva 31: Errores comunes + desafío final
+Para cerrar, recuerda cuatro errores frecuentes: olvidar un punto y coma, confundir mayúsculas y minúsculas, escribir mal el nombre de una variable y utilizar doble igual para comparar texto en lugar de equals. Cuando aparezca un error, lee el mensaje de la consola y revisa la línea señalada. En la práctica veremos cómo funciona el registro, probaremos una edad válida y otra inválida y agregaremos un tercer estudiante como reto. Si completas eso, habrás creado un pequeño programa con programación orientada a objetos. ¡Felicitaciones por llegar hasta aquí!
+
+PARTE B — PRÁCTICA EN EL EDITOR EN LÍNEA
+
+05:00–06:15 | Preparar la clase encapsulada
+ACCIÓN: Abre starter de la lección 5; identifica private, getNombre, getEdad y setEdad.
+GUION: Esta versión de Estudiante guarda nombre y edad como privados. Eso significa que otra clase no debería acceder directamente a ellos. Para consultar los valores usamos los métodos getNombre y getEdad. Para cambiar la edad usamos setEdad, que verifica si el número está dentro de un rango permitido.
+
+06:15–07:40 | Crear el registro
+ACCIÓN: Dentro de main, escribe un array con `new Estudiante("Ana",14)` y `new Estudiante("Luis",15)`.
+GUION: Construyamos el grupo con dos estudiantes. Antes usábamos un array de números; ahora usamos un array de objetos de la clase Estudiante. Cada posición contiene un estudiante distinto. Ejecutamos el programa cuando terminemos el siguiente paso para comprobar los datos.
+
+07:40–09:05 | Recorrer y mostrar
+ACCIÓN: Agrega un bucle for que imprima nombre, edad o resumen del objeto.
+GUION: Recorremos desde la posición cero hasta antes de grupo.length. En cada posición consultamos el nombre y la edad con los métodos públicos. La consola debe mostrar los dos estudiantes. Fíjate: estamos combinando arrays, bucles y métodos de objetos dentro del mismo programa.
+
+09:05–10:35 | Validar edades
+ACCIÓN: Ejecuta `grupo[0].setEdad(15)` y `grupo[1].setEdad(-4)`; imprime resultados otra vez.
+GUION: Ahora cambiamos la edad de Ana a quince. Es un valor aceptado, así que el cambio se guarda. Luego intentamos dar a Luis una edad negativa. Como el setter comprueba los límites, se ignora la actualización y su edad sigue siendo quince. Esto explica por qué encapsular datos puede prevenir errores.
+
+10:35–12:00 | Corregir y extender
+ACCIÓN: Agrega una tercera instancia, ejecuta y repasa errores como `;`, mayúsculas y equals.
+GUION: Tu último reto es añadir a Marta al grupo y verificar que aparezca en pantalla. Si el programa no funciona, revisa la consola y comprueba los puntos y coma, las llaves y los nombres de las variables. Recuerda que Java distingue mayúsculas y minúsculas. ¡Listo! Ya has creado un programa que combina variables, decisiones, métodos, arrays, clases, objetos y encapsulación.
